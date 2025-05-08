@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class VehiclePersistenceAdapter implements VehicleRepository {
     private final VehicleJpaRepository vehicleJpaRepository;
-    private final VehicleMapper vehicleMapper;
+    private final VehicleMapperOut vehicleMapper;
 
     @Override
     public Vehicle save(Vehicle vehicle) {

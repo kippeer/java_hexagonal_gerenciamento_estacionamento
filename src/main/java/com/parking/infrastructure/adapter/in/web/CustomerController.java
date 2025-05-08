@@ -4,6 +4,7 @@ import com.parking.application.port.in.CustomerUseCase;
 import com.parking.infrastructure.adapter.in.web.dto.CustomerDto;
 import com.parking.infrastructure.adapter.in.web.mapper.CustomerMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class CustomerController {
     private final CustomerUseCase customerUseCase;
+    
+    @Qualifier("customerWebMapper")
     private final CustomerMapper customerMapper;
 
     @PostMapping

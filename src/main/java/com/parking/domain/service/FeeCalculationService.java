@@ -23,11 +23,11 @@ public class FeeCalculationService {
         if (parkingDuration.toMinutes() % 60 > 0) {
             hours++;
         }
-
+        
         BigDecimal hourlyRate = getHourlyRateByVehicleType(vehicle.getType());
         return hourlyRate.multiply(BigDecimal.valueOf(hours));
     }
-
+    
     public BigDecimal calculateFee(ParkingTicket ticket, Vehicle vehicle) {
         if (ticket.getExitTime() == null) {
             throw new IllegalArgumentException("Exit time not set for ticket: " + ticket.getTicketNumber());

@@ -4,7 +4,7 @@ import com.parking.domain.model.Vehicle;
 import org.springframework.stereotype.Component;
 
 @Component
-public class VehicleMapper {
+public class VehicleMapperOut {
     
     public Vehicle toDomain(VehicleJpaEntity entity) {
         return Vehicle.builder()

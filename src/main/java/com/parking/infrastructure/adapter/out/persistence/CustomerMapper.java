@@ -3,7 +3,7 @@ package com.parking.infrastructure.adapter.out.persistence;
 import com.parking.domain.model.Customer;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("customerPersistenceMapper")
 public class CustomerMapper {
     
     public Customer toDomain(CustomerJpaEntity entity) {

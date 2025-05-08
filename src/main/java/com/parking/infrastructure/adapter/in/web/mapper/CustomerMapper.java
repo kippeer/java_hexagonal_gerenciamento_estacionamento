@@ -4,7 +4,7 @@ import com.parking.domain.model.Customer;
 import com.parking.infrastructure.adapter.in.web.dto.CustomerDto;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("customerWebMapper")
 public class CustomerMapper {
     
     public CustomerDto toDto(Customer domain) {

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ParkingSlotPersistenceAdapter implements ParkingSlotRepository {
     private final ParkingSlotJpaRepository parkingSlotJpaRepository;
-    private final ParkingSlotMapper parkingSlotMapper;
+    private final ParkingSlotMapperOut parkingSlotMapper;
 
     @Override
     public ParkingSlot save(ParkingSlot slot) {

@@ -3,6 +3,7 @@ package com.parking.infrastructure.adapter.out.persistence;
 import com.parking.application.port.out.CustomerRepository;
 import com.parking.domain.model.Customer;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,6 +14,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class CustomerPersistenceAdapter implements CustomerRepository {
     private final CustomerJpaRepository customerJpaRepository;
+    
+    @Qualifier("customerPersistenceMapper")
     private final CustomerMapper customerMapper;
 
     @Override

@@ -24,22 +24,6 @@ Sistema desenvolvido em Spring Boot utilizando Arquitetura Hexagonal para gerenc
 - Java 17 ou superior
 - Maven 3.6 ou superior
 
-## Instalação e Execução
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/parking-management.git
-```
-
-2. Entre no diretório do projeto:
-```bash
-cd parking-management
-```
-
-3. Execute o projeto:
-```bash
-mvn spring-boot:run
-```
 
 O sistema estará disponível em `http://localhost:8080`
 
@@ -59,7 +43,6 @@ src/main/java/com/parking/
 └── infrastructure/        # Adaptadores e configuração
 ```
 
-Para mais detalhes sobre a arquitetura, consulte o arquivo [hexagonal.md](hexagonal.md).
 
 ## Endpoints Principais
 
